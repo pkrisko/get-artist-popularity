@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/get-artist-popularity/static/css/main.5f361e03.chunk.css",
+    "main.js": "/get-artist-popularity/static/js/main.a4ac1621.chunk.js",
+    "main.js.map": "/get-artist-popularity/static/js/main.a4ac1621.chunk.js.map",
+    "runtime-main.js": "/get-artist-popularity/static/js/runtime-main.f889995c.js",
+    "runtime-main.js.map": "/get-artist-popularity/static/js/runtime-main.f889995c.js.map",
+    "static/js/2.ba27f52c.chunk.js": "/get-artist-popularity/static/js/2.ba27f52c.chunk.js",
+    "static/js/2.ba27f52c.chunk.js.map": "/get-artist-popularity/static/js/2.ba27f52c.chunk.js.map",
+    "index.html": "/get-artist-popularity/index.html",
+    "precache-manifest.8b26f8b008e5cfb7795b053e26c9ce16.js": "/get-artist-popularity/precache-manifest.8b26f8b008e5cfb7795b053e26c9ce16.js",
+    "service-worker.js": "/get-artist-popularity/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/get-artist-popularity/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.ba27f52c.chunk.js.LICENSE.txt": "/get-artist-popularity/static/js/2.ba27f52c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f889995c.js",
+    "static/js/2.ba27f52c.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.a4ac1621.chunk.js"
+  ]
+}
