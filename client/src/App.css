@@ -1,21 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:regular,bold,italic&subset=latin,latin-ext');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,8 +21,47 @@
   color: #61dafb;
 }
 
+#logo-wrapper {
+  display: flex;
+  flex: 1;
+}
+
 input[name=artistId] {
   min-width: 180px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  line-height: 1;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-link:last-child {
+  border: 1px solid white;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+#spotify-logo {
+  margin-top: 30px;
+  width: 90px;
+}
+
+#lhm-logo {
+  height: 40px;
 }
 
 @keyframes App-logo-spin {

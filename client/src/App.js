@@ -1,45 +1,40 @@
-import React, { useState } from 'react';
-import { getArtistById } from './getArtist';
+import React from 'react';
+import ArtistInfoById from './components/ArtistInfoById';
+import greenLogo from './images/spotify/green-logo.png';
+import lostHarborMusicLogo from './images/lost-harbor-music/lhm-document-logo.png';
 import './App.css';
 
-const ArtistId = () => {
-  const [artistId, setArtistId] = useState('5TBdr1d9ZJ5YMhsxiF1Jo7');
-  const [popularity, setPopularity] = useState('');
-  const [src, setSrc] = useState('');
-  const [genres, setGenres] = useState([]);
-  const onChange = e => setArtistId(e.target.value);
-  const onSubmit = async e => {
-    e.preventDefault();
-    const artist = await getArtistById(artistId);
-    const { popularity, images, genres } = artist;
-    if (artist) {
-      setPopularity(popularity);
-      setSrc(images[2].url);
-      setGenres(genres);
-    }
+const links = [
+  {
+    href: 'https://www.lostharbormusic.com/',
+    text: 'Home',
+  },{
+    href: 'https://www.lostharbormusic.com/fieldnotes',
+    text: 'Field Notes',
+  },{
+    href: 'https://pkrisko.github.io/get-artist-popularity/',
+    text: 'Utilities',
   }
-  return <>
-    <form onSubmit={onSubmit}>
-      <label htmlFor="artistId">
-        <p>Enter Artist Id</p>
-        <input type="text" name="artistId" value={artistId} onChange={onChange} />
-        <input type="submit" value="Go" />
-        <p>Popularity: {popularity}</p>
-        {src.length > 0 && <p><img src={src} /></p>}
-        {genres.length > 0 && <p>Genres: </p>}
-        {genres.length > 0 && genres.map(genre => (
-          <div>{genre}</div>
-        ))}
-      </label>
-    </form>
-  </>
-}
+]
 
 const App = () => (
   <div className="App">
     <header className="App-header">
-      <ArtistId />
+      <div id="logo-wrapper">
+        <a href="https://www.lostharbormusic.com/">
+          <img src={lostHarborMusicLogo} alt="Lost Harbor Music Logo" id="lhm-logo" />
+        </a>
+      </div>
+      {links.map(link => (
+        <a href={link.href} key={link.text} className="nav-link">
+          {link.text}
+        </a>
+      ))}
     </header>
+    <div className="main">
+      <ArtistInfoById />
+      <img src={greenLogo} alt="Spotify Logo" id="spotify-logo" />
+    </div>
   </div>
 );
 
