@@ -32,6 +32,6 @@ def get_artist(artist_id):
     return json.loads(artist_r.data.decode())
 
 def lambda_handler(event, context):
-    artist_id = event['artist_id'] if 'artist_id' in event else ''
+    artist_id = event['queryStringParameters']['artist_id']
     artist_response = get_artist(artist_id)
     return artist_response
