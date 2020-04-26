@@ -3,15 +3,17 @@ import { getArtistById } from './getArtist';
 import './App.css';
 
 const ArtistId = () => {
-  const [artistId, setArtistId] = useState('');
+  const [artistId, setArtistId] = useState('5TBdr1d9ZJ5YMhsxiF1Jo7');
   const [popularity, setPopularity] = useState('');
   const [src, setSrc] = useState('');
   const onChange = e => setArtistId(e.target.value);
   const onSubmit = async e => {
     e.preventDefault();
     const artist = await getArtistById(artistId);
-    setPopularity(artist.popularity);
-    setSrc(artist.images[1].url)
+    if (artist) {
+      setPopularity(artist.popularity);
+      setSrc(artist.images[1].url)
+    }
   }
   return <>
     <form onSubmit={onSubmit}>
