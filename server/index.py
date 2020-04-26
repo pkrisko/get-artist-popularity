@@ -34,4 +34,7 @@ def get_artist(artist_id):
 def lambda_handler(event, context):
     artist_id = event['queryStringParameters']['artist_id']
     artist_response = get_artist(artist_id)
-    return artist_response
+    return {
+        'statusCode': 200,
+        'body': json.dumps(artist_response)
+    }
