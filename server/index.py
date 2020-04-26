@@ -36,5 +36,11 @@ def lambda_handler(event, context):
     artist_response = get_artist(artist_id)
     return {
         'statusCode': 200,
+        'headers': {
+            "Access-Control-Allow-Origin":"*",
+            "Access-Control-Allow-Credentials":"true",
+            "Access-Control-Allow-Methods":"GET,OPTIONS",
+            "Access-Control-Allow-Headers":"Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token","Content-Type":"application/json"
+        },
         'body': json.dumps(artist_response)
     }
