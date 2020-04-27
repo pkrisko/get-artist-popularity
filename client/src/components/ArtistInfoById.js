@@ -21,16 +21,20 @@ const ArtistInfoById = () => {
         <form onSubmit={onSubmit}>
           <label htmlFor="artistId">
             <p>Enter Artist Id</p>
-            <input type="text" name="artistId" value={artistId} onChange={onChange} />
+            <input type="text" id="artist-id" name="artistId" value={artistId} onChange={onChange} />
           </label>
-          <input type="submit" value="Go" />
+          <input type="submit" id="submit" value="Go" />
         </form>
         {popularity !== null && <p>Popularity: {popularity}</p>}
         {src.length > 0 && <p><img src={src} /></p>}
         {genres.length > 0 && <p>Genres: </p>}
-        {genres.length > 0 && genres.map(genre => (
-            <div key={genre}>{genre}</div>
-        ))}
+        {genres.length > 0 &&
+        <ul>
+          {genres.map(genre => (
+            <li key={genre}>{genre}</li>
+          ))}
+        </ul>
+        }
       </>
     );
   }
