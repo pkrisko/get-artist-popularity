@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import { getArtistById } from '../services/getArtist';
+import ArtistInfoCard from './ArtistInfoCard';
 
 const ArtistInfoById = () => {
     const [artistId, setArtistId] = useState('5TBdr1d9ZJ5YMhsxiF1Jo7');
-    const [popularity, setPopularity] = useState(null);
-    const [src, setSrc] = useState('');
-    const [genres, setGenres] = useState([]);
+    const [artist, setArtist] = useState(null);
     const onChange = e => setArtistId(e.target.value);
     const onSubmit = async e => {
       e.preventDefault();
-      const { popularity, images, genres } = await getArtistById(artistId);
-      if (popularity && images && genres) {
-        setPopularity(popularity);
-        setSrc(images[2].url);
-        setGenres(genres);
-      }
+      const res = await getArtistById(artistId);
+      res && setArtist(res);
     }
     return (
       <>
@@ -25,16 +20,13 @@ const ArtistInfoById = () => {
           </label>
           <input type="submit" id="submit" value="Go" />
         </form>
-        {popularity !== null && <p>Popularity: {popularity}</p>}
-        {src.length > 0 && <p><img src={src} /></p>}
-        {genres.length > 0 && <p>Genres: </p>}
-        {genres.length > 0 &&
-        <ul>
-          {genres.map(genre => (
-            <li key={genre}>{genre}</li>
-          ))}
-        </ul>
-        }
+        {artist && <ArtistInfoCard
+          popularity={artist.popularity}
+          imgSrc={artist.images[2].url}
+          genres={artist.genres}
+          name={artist.name}
+          followers={artist.followers.total}
+        />}
       </>
     );
   }

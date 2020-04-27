@@ -27,7 +27,7 @@
 }
 
 input[name=artistId] {
-  min-width: 166px;
+  width: 150px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -84,7 +84,47 @@ input {
   background-color: black;
   color: white;
   border-top-right-radius: 25px;
+  border-top-left-radius: 0;
   border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 0;
+  padding-right: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  width: 330px;
+  margin-top: 25px;
+  padding: 25px 0;
+}
+
+img.profile {
+  border-radius: 150px;
+}
+
+div.card-item {
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#genres {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+#genres ul {
+  margin: 0;
+}
+
+#genres li {
+  text-align: left;
+}
+
+#genres-title {
+  text-align: left;
 }
 
 @media only screen and (max-width: 600px) {
