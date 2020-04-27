@@ -30,6 +30,9 @@ input[name=artistId] {
   width: 150px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 p {
