@@ -6,6 +6,7 @@ import base64
 http = urllib3.PoolManager()
 CLIENT_ID = os.environ['CLIENT_ID']
 CLIENT_SECRET = os.environ['CLIENT_SECRET']
+ALLOWED_ORIGIN = os.environ['ALLOWED_ORIGIN']
 
 def get_token():
     id_and_secret = f'{CLIENT_ID}:{CLIENT_SECRET}'
@@ -37,7 +38,7 @@ def lambda_handler(event, context):
     return {
         'statusCode': 200,
         'headers': {
-            "Access-Control-Allow-Origin":"*",
+            "Access-Control-Allow-Origin":ALLOWED_ORIGIN,
             "Access-Control-Allow-Credentials":"true",
             "Access-Control-Allow-Methods":"GET,OPTIONS",
             "Access-Control-Allow-Headers":"Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token","Content-Type":"application/json"
