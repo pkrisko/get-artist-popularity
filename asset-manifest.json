@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/get-artist-popularity/static/css/main.df3935d6.chunk.css",
-    "main.js": "/get-artist-popularity/static/js/main.60b57fa8.chunk.js",
-    "main.js.map": "/get-artist-popularity/static/js/main.60b57fa8.chunk.js.map",
+    "main.css": "/get-artist-popularity/static/css/main.8e0837e5.chunk.css",
+    "main.js": "/get-artist-popularity/static/js/main.124b9784.chunk.js",
+    "main.js.map": "/get-artist-popularity/static/js/main.124b9784.chunk.js.map",
     "runtime-main.js": "/get-artist-popularity/static/js/runtime-main.f889995c.js",
     "runtime-main.js.map": "/get-artist-popularity/static/js/runtime-main.f889995c.js.map",
-    "static/js/2.f406896c.chunk.js": "/get-artist-popularity/static/js/2.f406896c.chunk.js",
-    "static/js/2.f406896c.chunk.js.map": "/get-artist-popularity/static/js/2.f406896c.chunk.js.map",
+    "static/js/2.646f17fa.chunk.js": "/get-artist-popularity/static/js/2.646f17fa.chunk.js",
+    "static/js/2.646f17fa.chunk.js.map": "/get-artist-popularity/static/js/2.646f17fa.chunk.js.map",
     "index.html": "/get-artist-popularity/index.html",
-    "precache-manifest.9b6ecf4ab6f7a75f27621de47a9fe129.js": "/get-artist-popularity/precache-manifest.9b6ecf4ab6f7a75f27621de47a9fe129.js",
+    "precache-manifest.50a0d887ccdfa110cdf393bfa455a718.js": "/get-artist-popularity/precache-manifest.50a0d887ccdfa110cdf393bfa455a718.js",
     "service-worker.js": "/get-artist-popularity/service-worker.js",
-    "static/css/main.df3935d6.chunk.css.map": "/get-artist-popularity/static/css/main.df3935d6.chunk.css.map",
-    "static/js/2.f406896c.chunk.js.LICENSE.txt": "/get-artist-popularity/static/js/2.f406896c.chunk.js.LICENSE.txt",
+    "static/css/main.8e0837e5.chunk.css.map": "/get-artist-popularity/static/css/main.8e0837e5.chunk.css.map",
+    "static/js/2.646f17fa.chunk.js.LICENSE.txt": "/get-artist-popularity/static/js/2.646f17fa.chunk.js.LICENSE.txt",
     "static/media/green-logo.png": "/get-artist-popularity/static/media/green-logo.11dc437a.png",
     "static/media/lhm-document-logo.png": "/get-artist-popularity/static/media/lhm-document-logo.05c02bd4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f889995c.js",
-    "static/js/2.f406896c.chunk.js",
-    "static/css/main.df3935d6.chunk.css",
-    "static/js/main.60b57fa8.chunk.js"
+    "static/js/2.646f17fa.chunk.js",
+    "static/css/main.8e0837e5.chunk.css",
+    "static/js/main.124b9784.chunk.js"
   ]
 }
