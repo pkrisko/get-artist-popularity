@@ -45,6 +45,7 @@ header {
 
 h4 {
   margin: 15px 0;
+  text-transform: uppercase;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
