@@ -30,9 +30,6 @@ input[name=artistId] {
   width: 150px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 p {
@@ -81,6 +78,9 @@ input {
   background-clip: padding-box;
   border: 1px solid transparent;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 #submit {
