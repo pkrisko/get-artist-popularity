@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 25px;
   color: white;
 }
 
@@ -40,6 +40,11 @@ header {
   display: flex;
   align-items: center;
   padding: 20px 40px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  margin: 15px 0;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
@@ -102,35 +107,31 @@ input {
   padding: 25px 0;
 }
 
+.card-body {
+  padding: 0 15px;
+  text-align: left;
+}
+
 img.profile {
+  height: 300px;
   border-radius: 150px;
 }
 
 div.card-item {
   margin: 0 10px;
-  display: flex;
-  justify-content: space-between;
 }
 
-#genres {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
-
-#genres ul {
+.card-item ul {
   margin: 0;
 }
 
-#genres li {
-  text-align: left;
-}
-
-#genres-title {
-  text-align: left;
-}
-
 @media only screen and (max-width: 600px) {
+  h4 {
+    font-size: 30px;
+  }
+  .main {
+    font-size: 25px;
+  }
   header {
     padding: 0;
   }
