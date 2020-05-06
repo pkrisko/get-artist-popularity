@@ -26,7 +26,7 @@ const ArtistInfoById = () => {
       <>
         <form onSubmit={onSubmit}>
           <label htmlFor="artistId">
-            <p>Enter Artist Id or URI</p>
+            <p>Enter Artist Id or URI Lean Coffee</p>
             <input type="text" id="artist-id" name="artistId" value={artistId} onChange={onChange} />
           </label>
           <input type="submit" id="submit" value="Go" />
